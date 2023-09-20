@@ -5,25 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> |-TatooArt-| Web Page </title>
-  <link rel="shortcut icon" href="./img/logos/Logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/logos/maquina y logo.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!--Cambio de fuente-->
-  <linkhref="https: //fonts.googleapis.com/css2family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <!-- Inicio del Header -->
-    <nav class="navbar container">
+    <nav class="navbar contenedor">
       <picture class="navbar__logo">
         <a href="index.html">
-          <img src="./img/logos/Logo.png" alt="Imagen del Logo" width="150px" height="78px"></a>
+          <img src="./img/logos/maquina y logo.png " alt="Imagen del Logo" width="150px" height="78px"></a>
       </picture>
       <ul class="navbar__menu">
         <li class="navbar__item ">
@@ -31,7 +31,7 @@
         </li>
         <li class="navbar__item  with-submenu">
           <a class="navbar__link with-icon"
-            href="https://replit.com/@GabyInco/TatooArt?from=notifications#pages/Trabajos.html">Trabajos<iconify-icon
+            href="./pages/Trabajos.html">Trabajos<iconify-icon
               icon="mdi:chevron-down-box"></iconify-icon></a>
           <ul class="submenu">
             <li class="submenu__item">
@@ -70,91 +70,89 @@
       <article class="hero__content ">
         <h3 class="hero__title"><b>Nuestros Servicios</b></h3>
         <p class="hero__text">Nos dedicamos a realizar tatuajes altamente realistas</p>
-        <a class="hero__link" href="./pages/Trabajos.html">Trabajos</a>
+         <a class="hero__link" href="./pages/Trabajos.html">Trabajos</a>
       </article>
     </section>
-    <section class="exper">
+     <section class="exper">    
       <h3 class="exper__title">Sobre Nosotros</h3>
-      <p class=" exper__text"> Somos TatooArt, trabajamos hace 7 años en Argentina. Contamos con los mejores
-        profesionales y los más
+      <p class=" exper__text"> Somos TatooArt, trabajamos hace 7 años en Argentina. Contamos con los mejores profesionales y los más
         innovadores. Ofrecemos desde, el diseño hecho a medida de cada cliente, hasta el cuidado post tatoo y/o
         Piercing. Si no nos
         conoces, te invitamos a conocer nuestros trabajos </p>
     </section>
-    <section>
-      <div>
-        <article>
+    <section class="contenedorgral"> <!-- Agregar una clase al section para ordedar todos los contenedores, ejemplo flex-->
+      <div class="container">
+        <article class="container__box1">
           <a href="">
-            <picture>
-              <img src="" alt="imagen de un tatu chico">
+            <picture class="container__img">
+              <img src="./img/imagenes/tatu realista/147a090a1a7a0be0f11d95a1f6df0de2.jpg" alt="imagen de un tatu chico" width="50px" height="50px">
             </picture>
             <div>
-              <h4>Realistic Tatu</h4>
-              <p>Descripción</p>
+              <h4 class="container__title">Realistic Tatu</h4>
+              <p class="container__text">Esta es una pequeña descripcion de lo que tiene el tatu para ver como queda</p>
             </div>
           </a>
         </article>
-        <article>
+        <article class="container__box2">
           <a href="">
-            <picture>
-              <img src="" alt="imagen de un tatu chico">
+            <picture class="container__img">
+              <img src="./img/imagenes/Balinese/09eea50a8ed3e912fe17bc7013e78aac.jpg" alt="imagen de un tatu chico" width="50px" height="50px">
             </picture>
             <div>
-              <h4>Balinese Tatu</h4>
-              <p>Descripción</p>
+              <h4 class="container__title">Balinese Tatu</h4>
+              <p class="container__text">Esta es una pequeña descripcion de lo que tiene el tatu para ver como queda</p>
             </div>
           </a>
         </article>
-        <article>
+        <article class="container__box3">
           <a href="">
-            <picture>
-              <img src="" alt="imagen de un tatu chico">
+            <picture class="container__img">
+              <img src="./img/imagenes/Mandala/023.jpg" alt="imagen de un tatu chico" width="50px" height="50px">
             </picture>
             <div>
-              <h4>Mandala Tatu</h4>
-              <p>descripcion</p>
+              <h4 class="container__title">Mandala Tatu</h4>
+              <p class="container__text">Esta es una pequeña descripcion de lo que tiene el tatu para ver como queda</p>
             </div>
           </a>
         </article>
-      </div>
-      <div>
-        <picture>
-          <img
+      </div class="imagen-central"> <!-- recordar agregarle clases a la imagen para poder usarla correctamente-->
+        <picture class="imagen-central__caja">
+          <img class="imagen-central__caja__img"
             src="./img/imagenes/perfil-cierre-hombre-barbudo-tatuaje-cuello-gafas-sol-camisa-militar-foto-estudio-contra-pared-oscura_613910-21589.jpg"
             alt="Imagen de un hombre tatuado">
         </picture>
       </div>
-      <div>
-        <article>
+      <div class="container2">
+        <article class="container__box4">
           <a href="">
-            <picture>
-              <img src="" alt="imagen de un tatu chico">
+            <picture class="container__img">
+              <img src="./img/imagenes/Japanese/96075855_290704561928680_5403204513671967073_n.jpg" alt="imagen de un tatu chico" width="50px" height="50px">
             </picture>
             <div>
-              <h4>Japanese Tatu</h4>
-              <p>descripcion</p>
+              <h4 class="container__title">Japanese Tatu</h4>
+              <p class="container__text">Esta es una pequeña descripcion de lo que tiene el tatu para ver como queda</p>
             </div>
           </a>
         </article>
-        <article>
+        <article class="container__box5">
           <a href="">
-            <picture>
-              <img src="" alt="imagen de un tatu chico">
+            <picture class="container__img">
+              <img src="./img/imagenes/Tribal/0798d10b3f491c9a547807ccfd77d32d.jpg" alt="imagen de un tatu chico" width="50px" height="50px">
             </picture>
             <div>
-              <h4>Tribal Tatu</h4>
-              <p>descripcion</p>
+              <h4 class="container__title">Tribal Tatu</h4>
+              <p class="container__text">Esta es una pequeña descripcion de lo que tiene el tatu para ver como queda</p>
             </div>
           </a>
         </article>
-        <article>
+        <article class="container__box6">
           <a href="">
-            <picture>
-              <img src="" alt="imagen de un tatu chico">
+            <picture class="container__img">
+              <img src="./img/imagenes/Mandala/023.jpg" alt="imagen de un tatu chico" width="50px" height="50px">
             </picture>
             <div>
-              <h4>Pincing</h4>
-              <p>descripcion</p>
+              <h4 class="container__title">Pincing</h4>
+              <p class="container__text">Esta es una pequeña descripcion de lo que tiene el tatu para ver como queda</p>
             </div>
           </a>
         </article>

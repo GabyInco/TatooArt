@@ -53,7 +53,7 @@ p {
   font-size: 1.8em;
 }
 
-.container {
+.contenedor {
   max-width: auto;
   margin: auto;
 }
@@ -169,16 +169,17 @@ header {
 .exper{
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  padding: 15px;
   align-items: center;
-  position: relative;
-  background-color: transparent;
+  background-color: black;
+  height: 150px;
+  gap: 5px;
   
 }
 
 .exper__title{
   font-size: 18px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
 }
 .exper__text{
   display: flex;
@@ -187,9 +188,136 @@ header {
   align-items: center;
   position: relative;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
   font-size: 18px;
 }
 
+.contenedorgral{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  
+}
+
+/* Contenedor del lado Izquierdo */
+
+.container{
+  display:grid;
+  justify-content:left ;
+  width: 320px;
+  height: 700px;
+  padding: 5px;
+  gap: 5px;
+  flex-wrap: wrap
+  
+}
+
+.container__box1{
+  display: flex;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+
+}
+
+.container__box2{
+  display: flex;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+
+}
+
+.container__box3{
+  display: flex;
+  background-color:transparent;
+  width: 300px;
+  height: 200px;
+ 
+}
 
 
+.container__title{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.container__text{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+/* contenedor de la imagen central */
+
+
+.imagen-central__caja{
+  margin-top: 150px;
+  padding:15px;
+  
+}
+
+.imagen-central__caja__img{
+  border-radius: 75%;
+}
+
+/* Contenedor del lado Derecho */
+
+.container2{
+  display:grid;
+  justify-content:left ;
+  width: 320px;
+  height: 700px;
+  padding: 5px;
+  gap: 5px;
+  flex-wrap: wrap
+  
+}
+
+.container__box4{
+  display: flex;
+  background-color:transparent;
+  width: 300px;
+  height: 200px;
+
+}
+
+.container__box5{
+  display: flex;
+  background-color:transparent;
+  width: 300px;
+  height: 200px;
+
+}
+
+.container__box6{
+  display: flex;
+  background-color:transparent;
+  width: 300px;
+  height: 200px;
+ 
+}
+.container__img{
+  display: flex;
+  margin-left: 125px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.container__title{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.container__text{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
