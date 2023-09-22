@@ -306,6 +306,11 @@ header {
   margin-left: 125px;
   margin-top: 10px;
   margin-bottom: 5px;
+  
+}
+.container__img:hover{
+  filter: sepia(60%);
+  transition: .3s ease-in-out;
 }
 
 .container__title{
@@ -321,3 +326,33 @@ header {
   text-align: center;
   color: rgb(255, 255, 255);
 }
+/* Nueva Seccion con imagen y barra de progreso */
+
+.consumo{
+  display: flex;
+  border-style: double;
+  padding: 25px;
+  gap: 50px;
+}
+
+.consumo__caja__imagen{
+  border-style: double;
+  background-color:aqua  ;
+  width: 500px;
+  height: 500px;
+  margin-left: 100px;
+}
+.consumo__caja__imagen__img{
+  width: 25px;
+  height: 25px;
+}
+.consumo__caja__progress{
+  display: flex;
+  border-style: double;
+  width: 500px;
+  height: 250px;
+  justify-content: center;
+  margin-top: 140px
+  ;
+}
+
