@@ -330,29 +330,30 @@ header {
 
 .consumo{
   display: flex;
-  border-style: double;
   padding: 25px;
   gap: 50px;
+  background-color: black;
+  
 }
 
 .consumo__caja__imagen{
-  border-style: double;
-  background-color:aqua  ;
-  width: 500px;
-  height: 500px;
-  margin-left: 100px;
+  display: flex;
+  background-image: url(../img/imagenes/proceso-salon-tatuajes-chica-tatuadora-relleno-tatuaje-proceso-rellenar-tatuaje-cuerpo-primer-plano-manos_1321-3003.jpg)  ;
+  width: 300px;
+  height: 400px;
+  margin-left: 300px;
+  border-radius: 50px;
+  filter: sepia(60%);
 }
-.consumo__caja__imagen__img{
-  width: 25px;
-  height: 25px;
-}
+
 .consumo__caja__progress{
   display: flex;
   border-style: double;
   width: 500px;
   height: 250px;
   justify-content: center;
-  margin-top: 140px
-  ;
+  margin-top: 75px;
+  justify-content: center;
+  align-content: center;
 }
 
