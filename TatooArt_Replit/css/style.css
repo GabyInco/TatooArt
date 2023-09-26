@@ -166,7 +166,7 @@ header {
 
 /* Experiencia */
 
-.exper{
+.exper {
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -174,14 +174,15 @@ header {
   background-color: black;
   height: 150px;
   gap: 5px;
-  
+
 }
 
-.exper__title{
+.exper__title {
   font-size: 18px;
   color: rgb(255, 0, 0);
 }
-.exper__text{
+
+.exper__text {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -192,29 +193,28 @@ header {
   font-size: 18px;
 }
 
-.contenedorgral{
+.contenedorgral {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
   background-color: black;
-  
+
 }
 
 /* Contenedor del lado Izquierdo */
 
-.container{
-  display:grid;
-  justify-content:left ;
+.container {
+  display: grid;
+  justify-content: left;
   width: 320px;
   height: 700px;
   padding: 5px;
   gap: 5px;
   flex-wrap: wrap
-  
 }
 
-.container__box1{
+.container__box1 {
   display: flex;
   background-color: transparent;
   width: 300px;
@@ -222,7 +222,7 @@ header {
 
 }
 
-.container__box2{
+.container__box2 {
   display: flex;
   background-color: transparent;
   width: 300px;
@@ -230,94 +230,115 @@ header {
 
 }
 
-.container__box3{
+.container__box3 {
   display: flex;
-  background-color:transparent;
+  background-color: transparent;
   width: 300px;
   height: 200px;
- 
+
 }
 
 
-.container__title{
+.container__title {
   font-family: 'Courier New', Courier, monospace;
   font-size: 24px;
   text-align: center;
   color: rgb(255, 255, 255);
 }
 
-.container__text{
+.container__text {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 14px;
   text-align: center;
   color: rgb(255, 255, 255);
 }
+
 /* contenedor de la imagen central */
 
 
-.imagen-central__caja{
+.imagen-central__caja {
   margin-top: 150px;
-  padding:15px;
-  
+  padding: 15px;
+
 }
 
-.imagen-central__caja__img{
+.imagen-central__caja__img {
   border-radius: 75%;
 }
 
 /* Contenedor del lado Derecho */
 
-.container2{
-  display:grid;
-  justify-content:left ;
+.container2 {
+  display: grid;
+  justify-content: left;
   width: 320px;
   height: 700px;
   padding: 5px;
   gap: 5px;
   flex-wrap: wrap
-  
 }
 
-.container__box4{
+.container__box4 {
   display: flex;
-  background-color:transparent;
+  background-color: transparent;
   width: 300px;
   height: 200px;
 
 }
 
-.container__box5{
+.container__box5 {
   display: flex;
-  background-color:transparent;
+  background-color: transparent;
   width: 300px;
   height: 200px;
 
 }
 
-.container__box6{
+.container__box6 {
   display: flex;
-  background-color:transparent;
+  background-color: transparent;
   width: 300px;
   height: 200px;
- 
+
 }
-.container__img{
+
+.container__img {
   display: flex;
   margin-left: 125px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
 
-.container__title{
+.container__title {
   font-family: 'Courier New', Courier, monospace;
   font-size: 24px;
   text-align: center;
   color: rgb(255, 255, 255);
 }
 
-.container__text{
+.container__text {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 14px;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+
+/* pagina realistic */
+.contenedor_imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+}
+
+.realistic_1 {
+  width: 100%;
+}
+
+.titulo_principal {
+  text-align: center;
+  background-color: pink;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150%;
+  color: blue;
 }
