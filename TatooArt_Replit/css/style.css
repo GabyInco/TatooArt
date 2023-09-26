@@ -307,6 +307,12 @@ header {
   margin-left: 125px;
   margin-top: 10px;
   margin-bottom: 5px;
+
+}
+
+.container__img:hover {
+  filter: sepia(60%);
+  transition: .3s ease-in-out;
 }
 
 .container__title {
@@ -322,6 +328,38 @@ header {
   text-align: center;
   color: rgb(255, 255, 255);
 }
+
+/* Nueva Seccion con imagen y barra de progreso */
+
+.consumo {
+  display: flex;
+  padding: 25px;
+  gap: 50px;
+  background-color: black;
+
+}
+
+.consumo__caja__imagen {
+  display: flex;
+  background-image: url(../img/imagenes/proceso-salon-tatuajes-chica-tatuadora-relleno-tatuaje-proceso-rellenar-tatuaje-cuerpo-primer-plano-manos_1321-3003.jpg);
+  width: 300px;
+  height: 400px;
+  margin-left: 300px;
+  border-radius: 50px;
+  filter: sepia(60%);
+}
+
+.consumo__caja__progress {
+  display: flex;
+  border-style: double;
+  width: 500px;
+  height: 250px;
+  justify-content: center;
+  margin-top: 75px;
+  justify-content: center;
+  align-content: center;
+}
+
 
 /* pagina realistic */
 .contenedor_imagenes {
