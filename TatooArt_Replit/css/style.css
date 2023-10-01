@@ -360,6 +360,108 @@ header {
   align-content: center;
 }
 
+/* FOOTER */
+
+.Footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: rgb(24, 23, 23);
+  font-size: 10px;
+
+}
+/* LEFT */
+
+.Footer__left{
+  background-color:transparent;
+  padding: 25px;
+  width: 400px;
+}
+
+.Footer__left__conten-contact{
+  display: flex;
+  
+}
+
+.Footer__img{
+  margin-top: -9px;
+}
+
+#Number{
+  margin-left: 5px;
+}
+
+#Tatoo{
+  font-size: 24px;
+  margin-left: 5px;
+  margin-top: -6px;
+}
+.Footer__left__conten-text{
+  font-size: 14px;
+  text-align:justify;
+  margin-top: 10px;
+}
+
+/* CENTER */
+
+.Footer__center{
+  background-color:transparent;
+  padding: 25px;
+  width: 400px;
+}
+
+.Footer__center__conten{
+  display: flex;
+  flex-direction: column;
+}
+
+#Desarrolladores{
+  font-size: 18px;
+  text-align: center;
+}
+
+.Footer__center__conten-fav{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+  
+}
+
+
+/* RIGHT */
+
+.Footer__right{
+  background-color:transparent;
+  padding: 25px;
+  width: 400px;
+}
+
+.Footer__right__conten{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#Contactos{
+  font-size: 18px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.Red{
+  margin-right: 100px;
+  font-size: 10px;
+
+}
+.Icon{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
 
 /* pagina realistic */
 .contenedor_imagenes {
