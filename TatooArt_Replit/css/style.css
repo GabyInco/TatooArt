@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Amatic+SC:wght@400;700&family=IM+Fell+Great+Primer+SC&family=Overlock+SC&display=swap');
+
+/*ADAPTACION A PANTALLAS DE OTROS TAMAÑOS*/
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 62.5%;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #cfc9c9;
+}
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+header,
+footer {
+  font-family: 'Overlock SC', cursive;
+  color: rgb(255, 255, 255);
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.8em;
+}
+
+.contenedor {
+  max-width: auto;
+  margin: auto;
+}
+
+
+/* HEADER */
+
+header {
+  background-color: black;
+  padding: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__link {
+  color: red;
+  font-size: 2em;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: background .4s ease-in-out;
+  position: relative;
+
+}
+
+.navbar__link:hover {
+  background-color: rgb(107, 9, 9);
+}
+
+.with-icon {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.with-submenu:hover .submenu {
+  display: block;
+
+}
+
+.submenu {
+  display: none;
+  width: 300px;
+  color: red;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+.submenu__link {
+  display: block;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: background .4s ease-in-out;
+}
+
+.submenu__link:hover {
+  background-color: rgb(107, 9, 9);
+}
+
+/* HERO */
+
+.hero {
+  background-image: url(../img/imagenes/cerrar-imagen-tatuadora-que-hace-tatuaje-torso-hombre_613910-12221.jpg);
+  padding: 50px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  z-index: 3;
+  position: relative;
+}
+
+.hero__title {
+  font-size: 18px;
+  color: red;
+}
+
+.hero__text {
+  font-size: 13px;
+  color: red;
+}
+
+.hero__link {
+  font-size: 10px;
+  color: red;
+  background-color: rgb(54, 54, 54);
+  padding: 5px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+
+}
+
+/* Experiencia */
+
+.exper {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  background-color: black;
+  height: 150px;
+  gap: 5px;
+
+}
+
+.exper__title {
+  font-size: 18px;
+  color: rgb(255, 0, 0);
+}
+
+.exper__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+}
+
+.contenedorgral {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+
+}
+
+/* Contenedor del lado Izquierdo */
+
+.container {
+  display: grid;
+  justify-content: left;
+  width: 320px;
+  height: 700px;
+  padding: 5px;
+  gap: 5px;
+  flex-wrap: wrap
+}
+
+.container__box1 {
+  display: flex;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+
+}
+
+.container__box2 {
+  display: flex;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+
+}
+
+.container__box3 {
+  display: flex;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+
+}
+
+
+.container__title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.container__text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* contenedor de la imagen central */
+
+
+.imagen-central__caja {
+  margin-top: 150px;
+  padding: 15px;
+
+}
+
+.imagen-central__caja__img {
+  border-radius: 75%;
+}
+
+/* Contenedor del lado Derecho */
+
+.container2 {
+  display: grid;
+  justify-content: left;
+  width: 320px;
+  height: 700px;
+  padding: 5px;
+  gap: 5px;
+  flex-wrap: wrap
+}
+
+.container__box4 {
+  display: flex;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+
+}
+
+.container__box5 {
+  display: flex;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+
+}
+
+.container__box6 {
+  display: flex;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+
+}
+
+.container__img {
+  display: flex;
+  margin-left: 125px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+.container__img:hover {
+  filter: sepia(60%);
+  transition: .3s ease-in-out;
+}
+
+.container__title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.container__text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* Nueva Seccion con imagen y barra de progreso */
+
+.consumo {
+  display: flex;
+  padding: 25px;
+  gap: 50px;
+  background-color: black;
+
+}
+
+.consumo__caja__imagen {
+  display: flex;
+  background-image: url(../img/imagenes/proceso-salon-tatuajes-chica-tatuadora-relleno-tatuaje-proceso-rellenar-tatuaje-cuerpo-primer-plano-manos_1321-3003.jpg);
+  width: 300px;
+  height: 400px;
+  margin-left: 300px;
+  border-radius: 50px;
+  filter: sepia(60%);
+}
+
+.consumo__caja__progress {
+  display: flex;
+  border-style: double;
+  width: 500px;
+  height: 250px;
+  justify-content: center;
+  margin-top: 75px;
+  justify-content: center;
+  align-content: center;
+}
+
+/* FOOTER */
+
+.Footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: rgb(24, 23, 23);
+  font-size: 10px;
+
+}
+/* LEFT */
+
+.Footer__left{
+  background-color:transparent;
+  padding: 25px;
+  width: 400px;
+}
+
+.Footer__left__conten-contact{
+  display: flex;
+  
+}
+
+.Footer__img{
+  margin-top: -9px;
+}
+
+#Number{
+  margin-left: 5px;
+}
+
+#Tatoo{
+  font-size: 24px;
+  margin-left: 5px;
+  margin-top: -6px;
+}
+.Footer__left__conten-text{
+  font-size: 14px;
+  text-align:justify;
+  margin-top: 10px;
+}
+
+/* CENTER */
+
+.Footer__center{
+  background-color:transparent;
+  padding: 25px;
+  width: 400px;
+}
+
+.Footer__center__conten{
+  display: flex;
+  flex-direction: column;
+}
+
+#Desarrolladores{
+  font-size: 18px;
+  text-align: center;
+}
+
+.Footer__center__conten-fav{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+  
+}
+
+
+/* RIGHT */
+
+.Footer__right{
+  background-color:transparent;
+  padding: 25px;
+  width: 400px;
+}
+
+.Footer__right__conten{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#Contactos{
+  font-size: 18px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.Red{
+  margin-right: 100px;
+  font-size: 10px;
+
+}
+.Icon{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+/* pagina realistic */
+.contenedor_imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+}
+
+.realistic_1 {
+  width: 100%;
+}
+
+.titulo_principal {
+  text-align: center;
+  background-color: pink;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150%;
+  color: blue;
+}
