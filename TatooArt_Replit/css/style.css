@@ -468,32 +468,31 @@ header {
 
 /* pagina realistic */
 .contenedor_imagenes {
+  background-color: chocolate;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 640px;
+  grid-template-columns: auto;
+  width: 100%;
   height: auto;
-
 }
 
 
 .realistic_1 {
-
-  margin: 5px auto;
+  margin: 10px auto;
   padding: 5px auto;
-  border: 12px solid #fff;
+  border: 12px solid #0a0a0a;
 }
 
-#imagen_realista {
-  width: auto;
-  height: auto;
+
+#imagen_realista_1 {
+  margin-top: 0%;
 }
 
 
 
 .titulo_principal {
   text-align: center;
-  background-color: pink;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 150%;
-  color: blue;
+  background-color: rgb(78, 70, 72);
+  font-family: 'Overlock SC', cursive;
+  font-size: 100px;
+  color: rgb(1, 13, 17);
 }
