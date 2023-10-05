@@ -467,7 +467,7 @@ header {
 }
 
 /* pagina realistic */
-.contenedor_imagenes {
+.contenedor_imagenes_tatoo {
   background-color: chocolate;
   display: grid;
   grid-template-columns: auto;
@@ -476,7 +476,7 @@ header {
 }
 
 
-.realistic_1 {
+.contenedor_imagenes {
   margin: 10px auto;
   padding: 5px auto;
   border: 12px solid #0a0a0a;
