@@ -154,15 +154,6 @@ header {
   color: red;
 }
 
-.hero__link {
-  font-size: 10px;
-  color: red;
-  background-color: rgb(54, 54, 54);
-  padding: 5px 20px;
-  border-radius: 50px;
-  font-weight: 500;
-
-}
 
 /* Experiencia */
 
@@ -198,7 +189,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  background-color: black;
+  background-color: rgb(173, 243, 51);
 
 }
 
@@ -207,6 +198,7 @@ header {
 .container {
   display: grid;
   justify-content: left;
+  background-color: red;
   width: 320px;
   height: 700px;
   padding: 5px;
@@ -214,23 +206,7 @@ header {
   flex-wrap: wrap
 }
 
-.container__box1 {
-  display: flex;
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-
-}
-
-.container__box2 {
-  display: flex;
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-
-}
-
-.container__box3 {
+.container__box1, .container__box2, .container__box3 {
   display: flex;
   background-color: transparent;
   width: 300px;
@@ -257,6 +233,7 @@ header {
 
 
 .imagen-central__caja {
+  display: grid;
   margin-top: 150px;
   padding: 15px;
 
@@ -270,6 +247,7 @@ header {
 
 .container2 {
   display: grid;
+  background-color: blue;
   justify-content: left;
   width: 320px;
   height: 700px;
@@ -278,23 +256,7 @@ header {
   flex-wrap: wrap
 }
 
-.container__box4 {
-  display: flex;
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-
-}
-
-.container__box5 {
-  display: flex;
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-
-}
-
-.container__box6 {
+.container__box4, .container__box5, .container__box6  {
   display: flex;
   background-color: transparent;
   width: 300px;
