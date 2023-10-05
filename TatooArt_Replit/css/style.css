@@ -324,7 +324,7 @@ header {
 
 /* FOOTER */
 
-.Footer{
+.Footer {
   display: flex;
   justify-content: space-between;
   padding: 25px;
@@ -332,57 +332,59 @@ header {
   font-size: 10px;
 
 }
+
 /* LEFT */
 
-.Footer__left{
-  background-color:transparent;
+.Footer__left {
+  background-color: transparent;
   padding: 25px;
   width: 400px;
 }
 
-.Footer__left__conten-contact{
+.Footer__left__conten-contact {
   display: flex;
-  
+
 }
 
-.Footer__img{
+.Footer__img {
   margin-top: -9px;
 }
 
-#Number{
+#Number {
   margin-left: 5px;
 }
 
-#Tatoo{
+#Tatoo {
   font-size: 24px;
   margin-left: 5px;
   margin-top: -6px;
 }
-.Footer__left__conten-text{
+
+.Footer__left__conten-text {
   font-size: 14px;
-  text-align:justify;
+  text-align: justify;
   margin-top: 10px;
 }
 
 /* CENTER */
 
-.Footer__center{
-  background-color:transparent;
+.Footer__center {
+  background-color: transparent;
   padding: 25px;
   width: 400px;
 }
 
-.Footer__center__conten{
+.Footer__center__conten {
   display: flex;
   flex-direction: column;
 }
 
-#Desarrolladores{
+#Desarrolladores {
   font-size: 18px;
   text-align: center;
 }
 
-.Footer__center__conten-fav{
+.Footer__center__conten-fav {
   display: flex;
   align-items: center;
   justify-items: center;
@@ -390,36 +392,37 @@ header {
   justify-content: center;
   margin-top: 10px;
   gap: 10px;
-  
+
 }
 
 
 /* RIGHT */
 
-.Footer__right{
-  background-color:transparent;
+.Footer__right {
+  background-color: transparent;
   padding: 25px;
   width: 400px;
 }
 
-.Footer__right__conten{
+.Footer__right__conten {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#Contactos{
+#Contactos {
   font-size: 18px;
   text-align: left;
   margin-left: 10px;
 }
 
-.Red{
+.Red {
   margin-right: 100px;
   font-size: 10px;
 
 }
-.Icon{
+
+.Icon {
   display: flex;
   align-items: center;
   padding: 5px;
@@ -428,14 +431,26 @@ header {
 /* pagina realistic */
 .contenedor_imagenes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  width: 640px;
+  height: auto;
 
 }
+
 
 .realistic_1 {
-  width: 100%;
+
+  margin: 5px auto;
+  padding: 5px auto;
+  border: 12px solid #fff;
 }
+
+#imagen_realista {
+  width: auto;
+  height: auto;
+}
+
+
 
 .titulo_principal {
   text-align: center;
