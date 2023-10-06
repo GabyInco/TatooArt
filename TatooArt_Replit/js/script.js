@@ -1,11 +1,11 @@
 
 let sigUp = document.getElementById("sigUp");
 let sigIn = document.getElementById("sigIn");
-let nameInput =document.getElementById("nameInput");
+let emailInput =document.getElementById("emailInput");
 let title =document.getElementById("title");
 
 sigIn.onclick = function() {
-    nameInput.style.maxHeight = "0";
+    emailInput.style.maxHeight = "0";
     title.innerHTML = "Login";
     sigUp.classList.add("disable");
     sigIn.classList.remove("disable");
@@ -13,7 +13,7 @@ sigIn.onclick = function() {
 }
 
 sigUp.onclick = function() {
-    nameInput.style.maxHeight = "60px";
+    emailInput.style.maxHeight = "60px";
     title.innerHTML = "Registro";
     sigUp.classList.remove("disable");
     sigIn.classList.add("disable");

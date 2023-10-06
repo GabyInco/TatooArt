@@ -247,7 +247,7 @@ header {
 
 .container2 {
   display: grid;
-  background-color: blue;
+
   justify-content: left;
   width: 320px;
   height: 700px;
@@ -426,28 +426,25 @@ header {
 }
 
 /* pagina realistic */
-.contenedor_imagenes {
+.contenedor_imagenes_tatoo {
+  background-color: chocolate;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 640px;
+  grid-template-columns: auto;
+  width: 100%;
   height: auto;
-
 }
 
 
-.realistic_1 {
-
-  margin: 5px auto;
+.contenedor_imagenes {
+  margin: 10px auto;
   padding: 5px auto;
-  border: 12px solid #fff;
-}
-
-#imagen_realista {
-  width: auto;
-  height: auto;
+  border: 12px solid #0a0a0a;
 }
 
 
+#imagen_realista_1 {
+  margin-top: 0%;
+}
 
 .titulo_principal {
   text-align: center;
@@ -461,7 +458,7 @@ header {
 
 #container{
   width: 100%;
-  height: 100hv;
+  height: 150vh;
   background-color:red;
   display: flex;
   align-items: center;
@@ -567,4 +564,7 @@ form p a{
 .btn-field button.disable {
   background-color: darkslategrey;
   color: black;
+  background-color: rgb(78, 70, 72);
+  font-family: 'Overlock SC', cursive;
+  color: rgb(1, 13, 17);
 }
