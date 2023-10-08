@@ -28,28 +28,28 @@
         <div id="container">
             <div class="form-content">
                 <h1 id="title">Login</h1>
-                <form>
+                <form action="" id="registro" method="get">
                     <div class="input-group">
                         <div class="input-field" id="nameInput">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" placeholder="Usuaio">
+                            <input type="text"  name="Usuario" placeholder="Usuaio">
                         </div>
 
                         <div class="input-field">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" placeholder="Clave">
+                            <input type="password" name="Clave" placeholder="Clave">
                         </div>
 
                         <div class="input-field" id="emailInput">
                             <i class="fa-solid fa-envelope"></i>
-                            <input type="email" placeholder="E-mail">
+                            <input type="email" name="Correo" placeholder="E-mail">
                         </div>
                         <p>Si olvidaste tu contraseña, <a href="">has clic aqui</a></p>                        
                     </div>
 
                     <div class="btn-field">
                         <button id="sigUp" type="button">Registro</button>
-                        <button id="sigIn" type="button" class="disable">Login</button>                        
+                        <button id="sigIn" type="button" class="disable">Login</button>                    
                     </div>
                 </form>
             </div>

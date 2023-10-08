@@ -13,6 +13,21 @@
   }
 }
 
+:root{
+  --color1-color:rgb(26,19,52,1);
+  --color2-color:rgb(1,115,81,1);
+  --color3-color:rgb(251,191,69,1);
+  --color4-color:rgb(161,42,94,1);
+  --color5-color:rgb(38,41,74,1);
+  --color6-color:rgb(3,195,131,1);
+  --color7-color:rgb(239,106,50,1);
+  --color8-color:rgb(113,1,98,1);
+  --color9-color:rgb(0,0,0,1);
+  --color10-color:rgb(255,255,255,1);
+
+}
+
+
 *,
 *::before,
 *::after {
@@ -24,12 +39,12 @@
 html {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 62.5%;
-  color: black;
+  color:var(--color9-color);
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #cfc9c9;
+  background-color:var(--color9-color);
 }
 
 a {
@@ -41,7 +56,7 @@ a {
 header,
 footer {
   font-family: 'Overlock SC', cursive;
-  color: rgb(255, 255, 255);
+  color:var(--color10-color);
 }
 
 ul,
@@ -62,7 +77,7 @@ p {
 /* HEADER */
 
 header {
-  background-color: black;
+  background-color:var(--color9-color);
   padding: 24px;
 }
 
@@ -79,7 +94,7 @@ header {
 }
 
 .navbar__link {
-  color: red;
+  color:var(--color8-color);
   font-size: 2em;
   padding: 8px 16px;
   display: inline-block;
@@ -89,7 +104,7 @@ header {
 }
 
 .navbar__link:hover {
-  background-color: rgb(107, 9, 9);
+  background-color: var(--color4-color);
 }
 
 .with-icon {
@@ -106,9 +121,9 @@ header {
 .submenu {
   display: none;
   width: 300px;
-  color: red;
+  color: var(--color8-color);
   position: absolute;
-  background-color: rgb(0, 0, 0);
+  background-color:var(--color9-color);
   z-index: 2;
 }
 
@@ -120,7 +135,7 @@ header {
 }
 
 .submenu__link:hover {
-  background-color: rgb(107, 9, 9);
+  background-color:var(--color4-color);
 }
 
 /* HERO */
@@ -144,15 +159,11 @@ header {
   position: relative;
 }
 
-.hero__title {
+.hero__title, .hero__text, .exper__title {
   font-size: 18px;
-  color: red;
+  color:var(--color8-color);
 }
 
-.hero__text {
-  font-size: 13px;
-  color: red;
-}
 
 
 /* Experiencia */
@@ -162,16 +173,12 @@ header {
   flex-direction: column;
   padding: 15px;
   align-items: center;
-  background-color: black;
+  background-color:transparent;
   height: 150px;
   gap: 5px;
 
 }
 
-.exper__title {
-  font-size: 18px;
-  color: rgb(255, 0, 0);
-}
 
 .exper__text {
   display: flex;
@@ -180,7 +187,7 @@ header {
   align-items: center;
   position: relative;
   text-align: center;
-  color: rgb(255, 0, 0);
+  color: var(--color8-color);
   font-size: 18px;
 }
 
@@ -189,7 +196,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  background-color: rgb(0, 0, 0);
+  background-color:transparent;
 
 }
 
@@ -214,18 +221,19 @@ header {
 }
 
 
-.container__title {
+#container__title {
   font-family: 'Courier New', Courier, monospace;
   font-size: 24px;
+  color: var(--color3-color);
   text-align: center;
-  color: rgb(255, 255, 255);
+  
 }
 
-.container__text {
+#container__text {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color:var(--color7-color);
 }
 
 /* contenedor de la imagen central */
@@ -246,7 +254,6 @@ header {
 
 .container2 {
   display: grid;
-
   justify-content: left;
   width: 320px;
   height: 700px;
@@ -274,20 +281,6 @@ header {
 .container__img:hover {
   filter: sepia(60%);
   transition: .3s ease-in-out;
-}
-
-.container__title {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 24px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-
-.container__text {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 14px;
-  text-align: center;
-  color: rgb(255, 255, 255);
 }
 
 /* Nueva Seccion con imagen y barra de progreso */
@@ -327,8 +320,9 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 25px;
-  background-color: rgb(24, 23, 23);
+  background-color: var(--color1-color);
   font-size: 10px;
+  height: 260px;
 
 }
 /* LEFT */
@@ -337,6 +331,7 @@ header {
   background-color:transparent;
   padding: 25px;
   width: 400px;
+  height: 200px;
 }
 
 .Footer__left__conten-contact{
@@ -404,7 +399,7 @@ header {
 .Footer__right__conten{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2px;
 }
 
 #Contactos{
@@ -415,7 +410,7 @@ header {
 
 .Red{
   margin-right: 100px;
-  font-size: 10px;
+  font-size: 9px;
 
 }
 .Icon{
