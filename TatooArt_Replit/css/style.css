@@ -83,7 +83,7 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
 }
 
@@ -100,43 +100,18 @@ header {
   display: inline-block;
   transition: background .4s ease-in-out;
   position: relative;
+  border-radius: 10px;
 
 }
 
 .navbar__link:hover {
   background-color: var(--color4-color);
+  border-style: groove;
+  border-radius: 10px;
 }
 
-.with-icon {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
 
-.with-submenu:hover .submenu {
-  display: block;
 
-}
-
-.submenu {
-  display: none;
-  width: 300px;
-  color: var(--color8-color);
-  position: absolute;
-  background-color:var(--color9-color);
-  z-index: 2;
-}
-
-.submenu__link {
-  display: block;
-  padding: 8px 16px;
-  font-size: 14px;
-  transition: background .4s ease-in-out;
-}
-
-.submenu__link:hover {
-  background-color:var(--color4-color);
-}
 
 /* HERO */
 
@@ -222,7 +197,7 @@ header {
 
 
 #container__title {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Overlock SC', cursive;
   font-size: 24px;
   color: var(--color3-color);
   text-align: center;
@@ -230,7 +205,7 @@ header {
 }
 
 #container__text {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Overlock SC', cursive;
   font-size: 11px;
   text-align: center;
   color:var(--color7-color);
@@ -352,6 +327,7 @@ header {
   margin-left: 5px;
   margin-top: -6px;
 }
+
 .Footer__left__conten-text{
   font-size: 14px;
   text-align:justify;
@@ -421,18 +397,22 @@ header {
 
 /* paginas estilos de tatuajes: realistic, balinese etc */
 .contenedor_imagenes_tatoo {
-  background-color: chocolate;
+  background-color:var(--color4-color);
   display: grid;
   grid-template-columns: auto;
   width: 100%;
   height: auto;
+ 
 }
 
 
 .contenedor_imagenes {
   margin: 10px auto;
   padding: 5px auto;
-  border: 12px solid #0a0a0a;
+  border: 20px solid #0a0a0a;
+  border-radius: 5px;
+  z-index: 0;
+ 
 }
 
 
@@ -441,18 +421,26 @@ header {
 }
 
 .titulo_principal {
+  height: 50px;
   text-align: center;
+  padding: 15px;
   background-color: pink;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 150%;
-  color: blue;
+  font-family: 'Overlock SC', cursive;
+  font-size: 25px;
+  color:var(--color5-color);
+  
 }
 
 /* Loguin */
 
+.formulario{
+  width: 100%;
+  height: 800px;
+}
+
 #container{
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color:rgb(0, 0, 0);
   display: flex;
   align-items: center;
@@ -463,10 +451,12 @@ header {
 .form-content{
   width: 100%;
   max-width: 450px;
-  background-color: rgb(255, 0, 0);
+  height: 800px;
+  background-color:var(--color6-color);
   padding: 50px 60px 70px;
   text-align: center;
   border-radius: 25px;
+  
 }
 
 .form-content h1{
@@ -475,27 +465,14 @@ header {
   color: white;
   position: relative;
 }
-
-.form-content h1::after{
-  content:"";
-  width: 30px;
-  height: 4px;
-  border-radius: 3px;
-  background: yellow;
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  transform: translate(-50%);
-}
-
+  
 .input-field{
-  background-color:brown;
+  background-color:var(--color2-color);
   margin: 15px 0;
-  border-radius: 3px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  transition: max-height 0.5s;
-  overflow: hidden;
+
 
 }
 
@@ -522,6 +499,7 @@ form p{
   color: white;
   text-align: left;
   font-size: 13px;
+  text-align: center;
 
 }
 
@@ -533,13 +511,14 @@ form p a{
 .btn-field{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
+  margin-top: 180px;
 }
 
 .btn-field button{
   flex-basis: 48%;
   font-size: 16px;
-  background-color: darkgray;
+  background-color: rgb(125, 125, 115);
   color: white;
   height: 40px;
   border-radius: 10px;
@@ -560,5 +539,17 @@ form p a{
   color: black;
   background-color: rgb(78, 70, 72);
   font-family: 'Overlock SC', cursive;
-  color: rgb(1, 13, 17);
+
+}
+
+.errornom, .error, .errorUsu, .errorClave, .errorMail {
+  color: var(--color10-color);
+  
+
+}
+
+.input-group input.errornom, input.error, input.errorUsu, input.errorClave, input.errorMail,  .form-selct.error{
+  border: 4px solid var(--color7-color); 
+  margin:0 0 0 -23px;
+  border-radius: 8px;
 }
