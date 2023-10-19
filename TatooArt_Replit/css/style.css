@@ -430,8 +430,14 @@ header {
   max-height: 400px;
   object-fit: cover;
   border-radius: 30px;
-
 }
+
+.contenedor_imagenes img:hover{
+  transform: scale(1.2);
+  transition-duration: 3s;
+  filter:saturate(150%);
+}
+
 
 /* fin de estilo de paginas */
 
