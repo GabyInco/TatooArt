@@ -406,25 +406,32 @@ header {
 }
 
 /* paginas estilos de tatuajes: realistic, balinese etc */
-.contenedor_imagenes_tatoo {
-  background-color:var(--color4-color);
-  display: grid;
-  grid-template-columns: auto;
-  width: 100%;
-  height: auto;
- 
-}
 
+.contenedor_imagenes_tatoo {
+  display: grid;
+  grid-template-columns:repeat(2, 600px);
+  grid-template-rows: repeat(200px); 
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;  
+  margin-bottom: 20px;
+  background-color:transparent;
+}
 
 .contenedor_imagenes {
-  margin: 10px auto;
-  padding: 5px auto;
-  border: 20px solid #0a0a0a;
-  border-radius: 5px;
-  z-index: 0;
- 
-}
+border-radius: 30px;
+margin:auto;
+padding: auto;
 
+}
+.contenedor_imagenes img{
+  max-width: 500px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 30px;
+  
+}
+/* fin de estilo de paginas */
 
 #imagen_realista_1 {
   margin-top: 0%;
