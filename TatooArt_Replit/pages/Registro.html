@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> |-TatooArt-| Web Page </title>
+  <title> |-Registro-| Web Page </title>
   <link rel="shortcut icon" href="./img/logos/Logo 04.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -26,37 +26,54 @@
     </nav>
   </header><!-- Fin del Header -->
   <main>
-    <section>
+    <section class="formulario">
       <div id="container">
-        <div class="form-content">
-          <h1 id="title">Login</h1>
-          <form action="" id="registro" method="get">
-            <div class="input-group">
-              <div class="input-field" id="nameInput">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" name="Usuario" placeholder="Usuaio">
-              </div>
+          <div class="form-content">
+              <h1 id="title">Registro</h1>
+              <form action="#" id="registro" method="get">
 
-              <div class="input-field">
-                <i class="fa-solid fa-lock"></i>
-                <input type="password" name="Clave" placeholder="Clave">
-              </div>
+                      <div class="input-group">
+                      <div class="input-field" id="firstNameInput">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text"  name="Nombre" id="Nombre" placeholder="Nombre">
+                      </div>
+                      <div class="errornom" id="errornom-nombre"></div>
+                      
+                      <div class="input-field" id="secondNameInput">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text"  name="Apellido" id="Apellido" placeholder="Apellido">
+                      </div>
+                      <div class="error" id="error-apellido"></div>
+                      
+                      <div class="input-field" id="user">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="text"  name="Usuario" id="Usuario" placeholder="Usuario">
+                      </div>
+                      <div class="errorUsu" id="errorUsu-Usuario"></div>
+                      
 
-              <div class="input-field" id="emailInput">
-                <i class="fa-solid fa-envelope"></i>
-                <input type="email" name="Correo" placeholder="E-mail">
-              </div>
-              <p>Si olvidaste tu contraseña, <a href="">has clic aqui</a></p>
-            </div>
+                      <div class="input-field" id="pass">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="Clave" id="Clave" placeholder="Clave">
+                      </div>
+                      <div class="errorClave" id="errorClave-Clave"></div>
 
-            <div class="btn-field">
-              <button id="sigUp" type="button">Registro</button>
-              <button id="sigIn" type="button" class="disable">Login</button>
-            </div>
-          </form>
-        </div>
+                      <div class="input-field" id="emailInput">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="Correo" id="Correo" placeholder="Correo">
+                      </div>
+                      <div class="errorMail" id="errorMail-Correo"></div>
+  
+                      <p>Si olvidaste tu contraseña, <a href="">has clic aqui</a></p>                        
+                  </div>
+
+                  <div class="btn-field">
+                      <button id="sigUp" type="submit">Enviar</button>                
+                  </div>
+              </form>
+          </div>
       </div>
-    </section>
+  </section>
   </main>
 
   <footer class="Footer">

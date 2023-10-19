@@ -100,43 +100,18 @@ header {
   display: inline-block;
   transition: background .4s ease-in-out;
   position: relative;
+  border-radius: 10px;
 
 }
 
 .navbar__link:hover {
   background-color: var(--color4-color);
+  border-style: groove;
+  border-radius: 10px;
 }
 
-.with-icon {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
 
-.with-submenu:hover .submenu {
-  display: block;
 
-}
-
-.submenu {
-  display: none;
-  width: 300px;
-  color: var(--color8-color);
-  position: absolute;
-  background-color: var(--color9-color);
-  z-index: 2;
-}
-
-.submenu__link {
-  display: block;
-  padding: 8px 16px;
-  font-size: 14px;
-  transition: background .4s ease-in-out;
-}
-
-.submenu__link:hover {
-  background-color: var(--color4-color);
-}
 
 /* HERO */
 
@@ -228,7 +203,7 @@ header {
 
 
 #container__title {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Overlock SC', cursive;
   font-size: 24px;
   color: var(--color3-color);
   text-align: center;
@@ -236,7 +211,7 @@ header {
 }
 
 #container__text {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Overlock SC', cursive;
   font-size: 11px;
   text-align: center;
   color: var(--color7-color);
@@ -430,40 +405,61 @@ header {
   padding: 5px;
 }
 
-/* Paginas estilos de tatuajes: realistic, balinese etc */
-.contenedor_imagenes_tatoo {
-  background-color: chocolate;
-  display: grid;
-  grid-template-columns: auto;
-  width: 100%;
-  height: auto;
-}
+/* paginas estilos de tatuajes: realistic, balinese etc */
 
+.contenedor_imagenes_tatoo {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(200px);
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
 
 .contenedor_imagenes {
-  margin: 10px auto;
-  padding: 5px auto;
-  border: 12px solid #0a0a0a;
+  border-radius: 30px;
+  margin: auto;
+  padding: auto;
+
 }
 
+.contenedor_imagenes img {
+  max-width: 500px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 30px;
+
+}
+
+/* fin de estilo de paginas */
 
 #imagen_realista_1 {
   margin-top: 0%;
 }
 
 .titulo_principal {
+  height: 50px;
   text-align: center;
-  background: rgb(216, 30, 30);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 250%;
-  color: rgb(255, 0, 242);
+  padding: 15px;
+  background-color: pink;
+  font-family: 'Overlock SC', cursive;
+  font-size: 25px;
+  color: var(--color5-color);
+
 }
 
 /* Loguin */
 
+.formulario {
+  width: 100%;
+  height: 800px;
+}
+
 #container {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
@@ -474,10 +470,12 @@ header {
 .form-content {
   width: 100%;
   max-width: 450px;
-  background-color: rgb(255, 0, 0);
+  height: 800px;
+  background-color: var(--color6-color);
   padding: 50px 60px 70px;
   text-align: center;
   border-radius: 25px;
+
 }
 
 .form-content h1 {
@@ -487,26 +485,13 @@ header {
   position: relative;
 }
 
-.form-content h1::after {
-  content: "";
-  width: 30px;
-  height: 4px;
-  border-radius: 3px;
-  background: yellow;
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  transform: translate(-50%);
-}
-
 .input-field {
-  background-color: brown;
+  background-color: var(--color2-color);
   margin: 15px 0;
-  border-radius: 3px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  transition: max-height 0.5s;
-  overflow: hidden;
+
 
 }
 
@@ -533,6 +518,7 @@ form p {
   color: white;
   text-align: left;
   font-size: 13px;
+  text-align: center;
 
 }
 
@@ -544,13 +530,14 @@ form p a {
 .btn-field {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 180px;
 }
 
 .btn-field button {
   flex-basis: 48%;
   font-size: 16px;
-  background-color: darkgray;
+  background-color: rgb(125, 125, 115);
   color: white;
   height: 40px;
   border-radius: 10px;
@@ -571,5 +558,26 @@ form p a {
   color: black;
   background-color: rgb(78, 70, 72);
   font-family: 'Overlock SC', cursive;
-  color: rgb(1, 13, 17);
+
+}
+
+.errornom,
+.error,
+.errorUsu,
+.errorClave,
+.errorMail {
+  color: var(--color10-color);
+
+
+}
+
+.input-group input.errornom,
+input.error,
+input.errorUsu,
+input.errorClave,
+input.errorMail,
+.form-selct.error {
+  border: 4px solid var(--color7-color);
+  margin: 0 0 0 -23px;
+  border-radius: 8px;
 }
