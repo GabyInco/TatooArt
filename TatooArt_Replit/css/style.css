@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Amatic+SC:wght@400;700&family=IM+Fell+Great+Primer+SC&family=Overlock+SC&display=swap');
 
 /*ADAPTACION A PANTALLAS DE OTROS TAMAÑOS*/
-@media (max-width: 61.25em) {
+/* @media (max-width: 61.25em) {
   html {
     font-size: 58%;
   }
@@ -11,7 +11,8 @@
   html {
     font-size: 60%;
   }
-}
+} */
+
 
 :root {
   --color1-color: rgb(26, 19, 52, 1);
@@ -41,10 +42,12 @@ html {
   font-size: 62.5%;
   color: var(--color9-color);
   scroll-behavior: smooth;
+
 }
 
 body {
   background-color: var(--color9-color);
+  position: relative;
 }
 
 a {
@@ -378,7 +381,7 @@ header {
 .Footer__right {
   background-color: transparent;
   padding: 25px;
-  width: 400px;
+  width: auto;
 }
 
 .Footer__right__conten {
@@ -432,10 +435,10 @@ header {
   border-radius: 30px;
 }
 
-.contenedor_imagenes img:hover{
+.contenedor_imagenes img:hover {
   transform: scale(1.2);
   transition-duration: 3s;
-  filter:saturate(150%);
+  filter: saturate(150%);
 }
 
 
@@ -586,4 +589,60 @@ input.errorMail,
   border: 4px solid var(--color7-color);
   margin: 0 0 0 -23px;
   border-radius: 8px;
+}
+
+
+/* / RESPONSIVE */
+
+
+/* / Móviles en horizontal o tablets en vertical*/
+@media (min-width: 768px) {
+
+  .contenedor_imagenes_tatoo {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(200px);
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+  }
+}
+
+/* / Tablets en horizonal y escritorios normales */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .Footer {
+    background-color: black;
+  }
+}
+
+
+/* / Escritorios muy anchos */
+@media (max-width: 767px) {
+  .contenedor_imagenes_tatoo {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    transform: scale(0.9);
+    transition-duration: 3s;
+    filter: saturate(250%);
+  }
+
+  .Footer__center {
+    display: none;
+  }
+
+
+  .Footer {
+    background-color: black;
+  }
+
+  .imagen-central__caja {
+    display: none;
+
+  }
+
+
+
 }
