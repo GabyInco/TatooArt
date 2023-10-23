@@ -466,7 +466,7 @@ header {
   height: 800px;
 }
 
-#container {
+#container { 
   width: 100%;
   height: 100vh;
   background-color: rgb(0, 0, 0);
@@ -474,16 +474,18 @@ header {
   align-items: center;
   justify-content: center;
   padding: 50px;
+  
 }
 
 .form-content {
   width: 100%;
   max-width: 450px;
-  height: 800px;
+  height: 700px;
   background-color: var(--color6-color);
   padding: 50px 60px 70px;
   text-align: center;
   border-radius: 25px;
+  margin-top: 30px;
 
 }
 
@@ -540,21 +542,28 @@ form p a {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 180px;
+  margin-top: 255px;
+  
+    
 }
 
-.btn-field button {
-  flex-basis: 48%;
-  font-size: 16px;
-  background-color: rgb(125, 125, 115);
-  color: white;
-  height: 40px;
-  border-radius: 10px;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  transform: background 1s;
 
+#sigUp{
+  width: 100%;
+  
+  background: var(--color1-color);
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  font-family: 'Overlock SC', cursive;
+  
+  
+}
+#sigUp:hover{
+  cursor: pointer;
+  background: var(--color5-color);
+  transition: 0.9s;
+  
 }
 
 .input-group {
@@ -562,13 +571,7 @@ form p a {
 
 }
 
-.btn-field button.disable {
-  background-color: darkslategrey;
-  color: black;
-  background-color: rgb(78, 70, 72);
-  font-family: 'Overlock SC', cursive;
 
-}
 
 .errornom,
 .error,
@@ -683,4 +686,78 @@ input.errorMail,
 .img {
   margin-top: 10px;
   width: 70%;
+}
+/* Contacto*/
+
+#seccionContacto{
+  background-image: url(../img/imagenes/Para-fondo-de-contactenos.jpg);
+  background-size: 100vw  100vh;
+  background-attachment:inherit;
+  margin: 0;
+  font-family: 'Overlock SC', cursive;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  
+  
+ 
+}
+
+#formcContacto{
+  
+  width: 450px;
+  margin:auto;
+  background: rgb(0,0,0,0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 80px;
+  border-radius: 10px;
+  
+
+  
+  
+}
+h2{
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.form-content-input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+  background:rgb(0, 0, 0, 0.5);
+  font-family: 'Overlock SC', cursive;
+  border-radius: 7px;
+  
+}
+
+textarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  color: var(--color10-color);
+}
+
+
+#contactoBoton{
+  background: var(--color7-color);
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: 'Overlock SC', cursive;
+  
+  
+}
+#contactoBoton:hover{
+  cursor: pointer;
+  background: var(--color3-color);
+  transition: 0.9s;
+  
 }
