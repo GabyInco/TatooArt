@@ -3,13 +3,22 @@ const btn = document.querySelector("#btn");
 const img = document.querySelector("#img");
 const input = document.querySelector("#input");
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = " ";
+
+
+
 
 btn.addEventListener("click", async () => {
     if (input.value === "") {
-        alert("Please enter a prompt!");
+        alert("Por favor ingresa tu idea");
         return;
     }
+
+    if (OPENAI_API_KEY === " ") {
+        alert("POR FAVOR INGRESE LA API KEY ")
+        return;
+    }
+
 
     btn.disabled = true;
 
@@ -32,5 +41,6 @@ btn.addEventListener("click", async () => {
 
     img.src = data.data[0].url;
     btn.disabled = false;
-    // img.src = "https://images.crunchbase.com/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld"
 });
+
+

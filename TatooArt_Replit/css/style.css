@@ -467,7 +467,7 @@ header {
   height: 800px;
 }
 
-#container { 
+#container {
   width: 100%;
   height: 100vh;
   background-color: rgb(0, 0, 0);
@@ -475,7 +475,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  
+
 }
 
 .form-content {
@@ -544,27 +544,28 @@ form p a {
   display: flex;
   justify-content: center;
   margin-top: 255px;
-  
-    
+
+
 }
 
 
-#sigUp{
+#sigUp {
   width: 100%;
-  
+
   background: var(--color1-color);
   color: white;
   font-size: 18px;
   border-radius: 10px;
   font-family: 'Overlock SC', cursive;
-  
-  
+
+
 }
-#sigUp:hover{
+
+#sigUp:hover {
   cursor: pointer;
   background: var(--color5-color);
   transition: 0.9s;
-  
+
 }
 
 .input-group {
@@ -614,19 +615,33 @@ input.errorMail,
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+  }
+
   .Footer {
     background-color: black;
 
   }
 
-  body {
-    width: 80%;
+  header {
+    width: 100%;
+  }
+
+  .hero {
+    width: 120%;
+  }
+
+  .imagen-central__caja {
+    display: none;
   }
 }
 
-
-
 @media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
   .contenedor_imagenes_tatoo {
     display: grid;
     grid-template-columns: auto;
@@ -651,6 +666,14 @@ input.errorMail,
   }
 }
 
+/* @media (min-width: 1025px) {
+  body {
+    background-color: yellow;
+
+
+  }
+}
+ */
 /* Botón Dall-e */
 .container_dall-e {
   display: flex;
@@ -696,57 +719,60 @@ input.errorMail,
   margin-top: 10px;
   width: 70%;
 }
+
 /* Contacto*/
 
-#seccionContacto{
+#seccionContacto {
   background-image: url(../img/imagenes/Para-fondo-de-contactenos.jpg);
-  background-size: 100vw  100vh;
-  background-attachment:inherit;
+  background-size: 100vw 100vh;
+  background-attachment: inherit;
   margin: 0;
   font-family: 'Overlock SC', cursive;
   width: 100%;
   height: 600px;
   display: flex;
-  
-  
- 
+
+
+
 }
 
-#formcContacto{
-  
+#formcContacto {
+
   width: 450px;
-  margin:auto;
-  background: rgb(0,0,0,0.4);
+  margin: auto;
+  background: rgb(0, 0, 0, 0.4);
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 80px;
   border-radius: 10px;
-  
 
-  
-  
+
+
+
 }
-h2{
+
+h2 {
   color: white;
   text-align: center;
   margin: 0;
   font-size: 30px;
   margin-bottom: 20px;
 }
-.form-content-input{
+
+.form-content-input {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
   font-size: 17px;
   border: none;
-  background:rgb(0, 0, 0, 0.5);
+  background: rgb(0, 0, 0, 0.5);
   font-family: 'Overlock SC', cursive;
   border-radius: 7px;
-  
+
 }
 
-textarea{
+textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
@@ -754,19 +780,20 @@ textarea{
 }
 
 
-#contactoBoton{
+#contactoBoton {
   background: var(--color7-color);
   color: white;
   padding: 20px;
   font-size: 20px;
   border-radius: 10px;
   font-family: 'Overlock SC', cursive;
-  
-  
+
+
 }
-#contactoBoton:hover{
+
+#contactoBoton:hover {
   cursor: pointer;
   background: var(--color3-color);
   transition: 0.9s;
-  
+
 }
