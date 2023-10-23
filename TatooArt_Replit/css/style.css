@@ -97,7 +97,7 @@ header {
 }
 
 .navbar__link {
-  color: var(--color8-color);
+  color: var(--color3-color);
   font-size: 2em;
   padding: 8px 16px;
   display: inline-block;
@@ -142,7 +142,7 @@ header {
 .hero__text,
 .exper__title {
   font-size: 18px;
-  color: var(--color8-color);
+  color: var(--color7-color);
 }
 
 
@@ -169,7 +169,7 @@ header {
   align-items: center;
   position: relative;
   text-align: center;
-  color: var(--color8-color);
+  color: var(--color3-color);
   font-size: 18px;
 }
 
@@ -271,7 +271,7 @@ header {
 
 /* Nueva Seccion con imagen y barra de progreso */
 
-.consumo {
+/* .consumo {
   display: flex;
   padding: 25px;
   gap: 50px;
@@ -288,6 +288,7 @@ header {
   border-radius: 50px;
   filter: sepia(60%);
 }
+ */
 
 .consumo__caja__progress {
   display: flex;
@@ -595,8 +596,7 @@ input.errorMail,
 /* / RESPONSIVE */
 
 
-/* / Móviles en horizontal o tablets en vertical*/
-@media (min-width: 768px) {
+@media (min-width: 767px) {
 
   .contenedor_imagenes_tatoo {
     display: grid;
@@ -609,17 +609,21 @@ input.errorMail,
   }
 }
 
-/* / Tablets en horizonal y escritorios normales */
-@media (min-width: 768px) and (max-width: 1199px) {
 
+@media (min-width: 768px) and (max-width: 1023px) {
   .Footer {
     background-color: black;
+
+  }
+
+  body {
+    width: 80%;
   }
 }
 
 
-/* / Escritorios muy anchos */
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
   .contenedor_imagenes_tatoo {
     display: grid;
     grid-template-columns: auto;
@@ -633,27 +637,29 @@ input.errorMail,
     display: none;
   }
 
-
   .Footer {
     background-color: black;
   }
 
+  /* imagen central del index */
   .imagen-central__caja {
     display: none;
 
   }
 }
 
-/* Dall-e */
+/* Botón Dall-e */
 .container_dall-e {
   display: flex;
   justify-content: center;
-  height: calc(100vh - 20px);
+  height: calc(50vh - 20px);
   align-items: center;
+  font-family: 'Overlock SC', cursive;
+  font-size: 15px;
 }
 
 .card {
-  background: #2a2a2a;
+  background: var(--color3-color);
   border-radius: 7px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
@@ -663,17 +669,20 @@ input.errorMail,
 }
 
 .input {
-  padding: 10px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Overlock SC', cursive;
+
 }
 
 .btn {
   padding: 10px;
   border-radius: 5px;
-  background: #202020;
-  color: white;
+  background: orangered;
+  color: var(--color6-color);
   border: none;
   cursor: pointer;
+
 }
 
 .btn:disabled {
