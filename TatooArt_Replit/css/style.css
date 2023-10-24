@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Amatic+SC:wght@400;700&family=IM+Fell+Great+Primer+SC&family=Overlock+SC&display=swap');
 
-/*ADAPTACION A PANTALLAS DE OTROS TAMAÑOS*/
-/* @media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-} */
-
-
 :root {
   --color1-color: rgb(26, 19, 52, 1);
   --color2-color: rgb(1, 115, 81, 1);
