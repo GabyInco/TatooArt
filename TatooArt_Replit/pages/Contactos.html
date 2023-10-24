@@ -36,24 +36,32 @@
 
   <main>
     <section id="seccionContacto">
-      <form id="formcContacto" action="">
+      <form id="formcContacto" action="https://formsubmit.co/jose.liquin@bue.edu.ar" method="POST"> <!-- https://formsubmit.co/ ## Aceptar activacion que llega al Email por primera vez para que lleguen los formularios-->
         <h2>Contactenos</h2>
 
         <div>
-          <input class="form-content-input" type="text" name="ContactoNombre" placeholder="Nombre">
+          <input class="form-content-input" type="text" name="Nombre" placeholder="Nombre">
         </div>
 
         <div>
-          <input class="form-content-input" type="email" name="ContactoCorreo" placeholder="Correo">
+          <input class="form-content-input" type="email" name="Correo" placeholder="Correo">
         </div>
 
         <div>
-          <textarea class="form-content-input" name="mensaje" id="Texto-consulta"
+          <textarea class="form-content-input" name="Mensaje" id="Texto-consulta"
             placeholder="Escriba aqui su consulta"></textarea>
         </div>
 
         <div>
-          <input id="contactoBoton" type="button" value="Enviar">
+          <input id="contactoBoton" type="submit" value="Enviar">
+        </div>
+
+        <div>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5501/TatooArt_Replit/pages/Contactos.html">
+        </div>
+
+        <div>
+          <input type="hidden" name="_captcha" value="false">
         </div>
       </form>
     </section>
